@@ -3,7 +3,7 @@ name = "gesture-cc"
 version = "0.1.0"
 description = "Hand gesture tracking that sends MIDI CC messages based on finger distances"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "mediapipe>=0.10.21",
     "numpy>=1.21.0",
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-gesture-cc = "main:main"
+gesture-cc = "app.main:main"
 
 [dependency-groups]
 dev = [
