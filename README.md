@@ -2,7 +2,7 @@
 
 Real-time hand gesture tracking that sends MIDI Control Change (CC) messages based on finger distances. Use your hands to control music software, VJ tools, or any MIDI-compatible application.
 
-<img src="img.png" width="500">
+<img src="img/img.png" width="500">
 
 ## Features
 
@@ -55,14 +55,14 @@ The app looks for MIDI ports containing "IAC" in the name. If no IAC port is fou
 Run the application:
 
 ```bash
-uv run python main.py
+uv run python -m app.main
 ```
 
 Press **q** to quit the application.
 
 ## Configuration
 
-Configuration is done by editing constants in `handler.py`:
+Configuration is done by editing constants in `app/handler.py`:
 
 | Constant | Default | Description |
 |----------|---------|-------------|
