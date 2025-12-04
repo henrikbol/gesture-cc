@@ -57,6 +57,11 @@ Run the application:
 ```bash
 uv run python -m app.main
 ```
+or 
+```bash
+uv run gesture-cc
+```
+
 
 Press **q** to quit the application.
 
