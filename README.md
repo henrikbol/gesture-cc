@@ -2,9 +2,12 @@
 
 Real-time hand gesture tracking that sends MIDI Control Change (CC) messages based on finger distances. Use your hands to control music software, VJ tools, or any MIDI-compatible application.
 
+<img src="img.png" width="500">
+
 ## Features
 
 - Tracks thumb and index fingertips on both hands using MediaPipe
+- Ableton Live (or any DAW) running on the same computer can directly use the CC messages
 - Sends 4 independent MIDI CC signals:
   - **CC 20**: Left hand thumb-to-index distance
   - **CC 21**: Right hand thumb-to-index distance
@@ -50,12 +53,6 @@ The app looks for MIDI ports containing "IAC" in the name. If no IAC port is fou
 ## Usage
 
 Run the application:
-
-```bash
-uv run gesture-cc
-```
-
-Or run directly:
 
 ```bash
 uv run python main.py
